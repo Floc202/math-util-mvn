@@ -3,8 +3,9 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/UnitTests/JUnit5TestClass.java to edit this template
  */
 
-package com.Floc202.mathutil.core;
+package com.Floc202.mathutil.core.test;
 
+import com.Floc202.mathutil.core.MathUtility;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
