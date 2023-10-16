@@ -1,11 +1,15 @@
+[![Math Utility Repo applying CI](https://github.com/Floc202/math-util-mvn/actions/workflows/math-util-ci-maven.yml/badge.svg)](https://github.com/Floc202/math-util-mvn/actions/workflows/math-util-ci-maven.yml)
+
 ### Welcome to Math Utility Repository
 
 ### You will find in this repo the folling stuff:
 
-- A Maven project to demonstrate a legendar Math library
-- A Unit Test test script using Junit Test framework
-  _A Continuous Integration (CI) scri[t using Github Actions
-  _...
+*A Maven project to demonstrate a legendar Math library
+*A Unit Test test script using Junit Test framework
+*A Continuous Integration (CI) script using Github Actions
+*A Regression Testing technique (refactor code to use recursion, and still green )
+\*A Test
+\\...
 
 #### Screenshots
 
