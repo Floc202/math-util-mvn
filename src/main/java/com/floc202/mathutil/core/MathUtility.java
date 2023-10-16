@@ -29,7 +29,9 @@ public class MathUtility {
             return 1; // nếu có thề kết thúc sớm, thì kết thúc ngay
         // sống sót đến chỗ này sure n = 2...20 vì nếu lớn hpn7 20 chết dọc dường rồi,
         // 2 cụm if ở trên rồi ko cần else vì trên đó xài return 
-        long result = 1; //giai thừa khời đầu là 1 
+        long result = 10; //giai thừa khời đầu là 1 
+        //khi long = 10 là cố tình làm code màu đỏ vì 2!lúc này là 20, 3! là 60
+        //nhân 10 lần
         //nhân dồn 2 3 4 5 ...n vào biến này thì thành n!
         
         for (int i = 2; i <= n; i++) {
