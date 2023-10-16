@@ -1,0 +1,31 @@
+
+# This workflow uses actions that are not certified by GitHub.
+# They are provided by a third-party and are governed by
+# separate terms of service, privacy policy, and support
+# documentation.
+
+name: Math Utility Repo applying CI # name là tương đương Console.log ghi lại nhật kí chạy các lệnh
+
+on:
+  push: 
+    branches: [ "main" ] # bất kì ai push code lên nhánh main, kho code chính 
+  pull_request:
+    branches: [ "main" ] #thì tự động thực thi các lệnh dưới đây
+                          # build app => .jar .war bằng cách
+jobs:                   
+  build:
+
+    runs-on: ubuntu-latest             #1. mượn 1 server bên mỹ, cài sẵn giùm OS UBUTU
+
+    steps:
+    - uses: actions/checkout@v3        #2. có sever rồi , download code từ GH về sever
+    - name: Set up JDK 21  - mượn JDK            #3. mượn cái JDK
+      uses: actions/setup-java@v3
+      with:
+        java-version: '21'               #4. khai báo version JDK ứng với file pom.xml
+        distribution: 'temurin'
+        cache: maven
+    - name: Build with Maven - tạo file .jar .war              #5. mượn MAVEN, chạy lệnh đống gói, test luôn
+      run: mvn -B package --file pom.xml  
+
+    
